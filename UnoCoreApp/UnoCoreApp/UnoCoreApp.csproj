@@ -1,0 +1,76 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\annualReview.png" />
+    <None Remove="Images\benefits.png" />
+    <None Remove="Images\cancelOrderFood.png" />
+    <None Remove="Images\discount.png" />
+    <None Remove="Images\events.png" />
+    <None Remove="Images\healty.png" />
+    <None Remove="Images\logoCircular.png" />
+    <None Remove="Images\lunchCore.jpg" />
+    <None Remove="Images\mailbox.png" />
+    <None Remove="Images\mycarrer.png" />
+    <None Remove="Images\orderFood.png" />
+    <None Remove="Images\parkingLot.png" />
+    <None Remove="Images\pictures.png" />
+    <None Remove="Images\profile.png" />
+    <None Remove="Images\receipt.png" />
+    <None Remove="Images\requestParking.jpg" />
+    <None Remove="Images\review.png" />
+    <None Remove="Images\ride.png" />
+    <None Remove="Images\rsvp.jpg" />
+    <None Remove="Images\savings.jpg" />
+    <None Remove="Images\subsidy.png" />
+    <None Remove="Images\temporalyFree.png" />
+    <None Remove="Images\unologo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\annualReview.png" />
+    <EmbeddedResource Include="Images\benefits.png" />
+    <EmbeddedResource Include="Images\cancelOrderFood.png" />
+    <EmbeddedResource Include="Images\discount.png" />
+    <EmbeddedResource Include="Images\events.png" />
+    <EmbeddedResource Include="Images\healty.png" />
+    <EmbeddedResource Include="Images\logoCircular.png" />
+    <EmbeddedResource Include="Images\lunchCore.jpg" />
+    <EmbeddedResource Include="Images\mailbox.png" />
+    <EmbeddedResource Include="Images\mycarrer.png" />
+    <EmbeddedResource Include="Images\orderFood.png" />
+    <EmbeddedResource Include="Images\parkingLot.png" />
+    <EmbeddedResource Include="Images\pictures.png" />
+    <EmbeddedResource Include="Images\profile.png" />
+    <EmbeddedResource Include="Images\receipt.png" />
+    <EmbeddedResource Include="Images\requestParking.jpg" />
+    <EmbeddedResource Include="Images\review.png" />
+    <EmbeddedResource Include="Images\ride.png" />
+    <EmbeddedResource Include="Images\rsvp.jpg" />
+    <EmbeddedResource Include="Images\savings.jpg" />
+    <EmbeddedResource Include="Images\subsidy.png" />
+    <EmbeddedResource Include="Images\temporalyFree.png" />
+    <EmbeddedResource Include="Images\unologo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\MenuCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ShowMenu.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

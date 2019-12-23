@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UnoCoreApp.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="DarkPrimary">#191919</Color>
+            <Color x:Key="Primary">#505050</Color>
+            <Color x:Key="LightPrimary">#304FF3</Color>
+
+            <Color x:Key="DarkSecondary">#191919</Color>
+            <Color x:Key="Secondary">#505050</Color>
+            <Color x:Key="LightSecondary">#0091CB</Color>
+
+            <Color x:Key="PrimaryText">#F2F2F2</Color>
+            <Color x:Key="SecondaryText">#000000</Color>
+            <Color x:Key="LightText">#FFFFFF</Color>
+
+            <Color x:Key="Background">#505050</Color>
+            <Color x:Key="LightPrimaryBackground">#0093C9</Color>
+
+            <Color x:Key="Accent">#304FF3</Color>
+            <Color x:Key="AlternateAccent">#191919</Color>
+
+            <Style x:Key="TitlePrimary" TargetType="Label">
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="Margin" Value="5,0,0,0" />
+                <Setter Property="TextColor" Value="{StaticResource PrimaryText}" />
+            </Style>
+            <Style x:Key="FormPrimary" TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+            </Style>
+            <Style x:Key="ButtonPrimary" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource LightPrimary}" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
