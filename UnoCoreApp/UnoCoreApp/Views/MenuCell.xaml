@@ -19,14 +19,14 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Label Text="{Binding Name}" TextColor="Black"
+            <Label Text="{Binding Name}" TextColor="White"
                    HorizontalOptions="Center"
                    FontSize="25" FontAttributes="Bold"
                    Grid.Row="0"/>
             <Image Aspect="AspectFit"
                    Source="{Binding ImageName, Converter={StaticResource imageConvert}}"
                    Grid.Row="1"/>
-            <Label Text="{Binding Description}" TextColor="Black"
+            <Label Text="{Binding Description}" TextColor="White"
                    HorizontalOptions="Center"
                    FontSize="15" FontAttributes="Bold"
                    Grid.Row="2"/>            

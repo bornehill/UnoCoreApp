@@ -7,7 +7,6 @@
         <ListView x:Name="recipeList"
                   ItemsSource="{Binding Options}"
                   SeparatorVisibility="None"
-                  Margin="10"
                   HasUnevenRows="True"
                   ItemSelected="GoSubMenu_Clicked"
                   Style="{StaticResource FormPrimary}">
